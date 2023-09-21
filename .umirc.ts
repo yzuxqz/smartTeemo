@@ -6,5 +6,9 @@ export default defineConfig({
   routes: [
     { path: "/", component: "home" },
   ],
+  https:{
+    cert: './localhost.pem',
+    key: './localhost-key.pem'
+  },
   npmClient: 'yarn',
 });
